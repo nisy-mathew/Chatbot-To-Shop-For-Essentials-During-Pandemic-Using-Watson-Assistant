@@ -1,0 +1,1436 @@
+{
+  "intents": [
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Can i have the essential product list"
+        },
+        {
+          "text": "Can you provide me the menu"
+        },
+        {
+          "text": "I want to look into the menu"
+        },
+        {
+          "text": "Menu Please"
+        },
+        {
+          "text": "What are the combo offers??"
+        },
+        {
+          "text": "What are the offers available?"
+        },
+        {
+          "text": "What are the specials combos today?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Order",
+      "examples": [
+        {
+          "text": "Can you please pick the order"
+        },
+        {
+          "text": "How can I pay?"
+        },
+        {
+          "text": "How can I place the order?"
+        },
+        {
+          "text": "I want to place an order"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Diary",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Butter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ghee",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Milk",
+          "synonyms": [
+            "Dhood"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "combos",
+          "synonyms": [
+            "combination"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Diary",
+          "synonyms": [
+            "Diary products",
+            "Milk products"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "list",
+          "synonyms": [
+            "catalogue",
+            "listing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Menu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Offers",
+          "synonyms": [
+            "deals",
+            "discount"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "product",
+          "synonyms": [
+            "brand",
+            "products"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "special",
+          "synonyms": [
+            "special item"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vegetables",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "ga",
+            "gud aftrnoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": [
+            "ge",
+            "gud evg"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gm",
+            "gud mng"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Brinjal",
+          "synonyms": [
+            "Egg plant"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Butter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Carrot",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cucumber",
+          "synonyms": [
+            "kakadi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Easy to cook gravy mix",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "French Beans",
+          "synonyms": [
+            "Beans",
+            "Green beans"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ghee",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ice creams Blue Berry",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lady's Finger",
+          "synonyms": [
+            "Bhindi",
+            "Okra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mc Cain Combo Pack",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Milk",
+          "synonyms": [
+            "Doodh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mixed Dry Fruits",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Potato",
+          "synonyms": [
+            "Aloo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tomato",
+          "synonyms": [
+            "Tamatar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Order",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "order",
+          "synonyms": [
+            "buy",
+            "pay",
+            "purchase"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": [
+            "Cash on Delivery"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Specials",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Easy to cook gravy Mix",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ice creams Blue Berry",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mc Cain Combo Pack",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mixed Dry Fruits",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Vegetables",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Brinjal",
+          "synonyms": [
+            "Egg Plant"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Carrot",
+          "synonyms": [
+            "Carrot"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cucumber",
+          "synonyms": [
+            "Kakadi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "French Beans",
+          "synonyms": [
+            "Beans",
+            "Green Beans"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lady's Finger",
+          "synonyms": [
+            "Bhindi",
+            "Okra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Potato",
+          "synonyms": [
+            "aaloo",
+            "Aloo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tomato",
+          "synonyms": [
+            "tamatar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_7_1601383114941",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_9_1601388507789",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_1_1601389003524",
+      "previous_sibling": "node_9_1603280700498"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1601390182198",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_1_1601390182214"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please provide your contact no."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1603345855262",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1603345855271",
+      "previous_sibling": "handler_7_1603345855271"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1601390091026",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1601390091033"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We accept Card, UPI and COD. What is the mode of your payment?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1601390182198",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1601390182214",
+      "previous_sibling": "handler_1_1601390182214"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you provide me with the item you want?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1601389005669",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1601389005812",
+      "previous_sibling": "handler_8_1601389005812"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many packets or kg do you want?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1601390091026",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1601390091033",
+      "previous_sibling": "handler_2_1601390091033"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1603345855262",
+      "context": {
+        "number2": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_7_1603345855271"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1601389005669",
+      "context": {
+        "Items": "@Items"
+      },
+      "conditions": "@Items",
+      "event_name": "input",
+      "dialog_node": "handler_8_1601389005812"
+    },
+    {
+      "type": "standard",
+      "title": "Specials",
+      "parent": "node_8_1601385368416",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Specials",
+      "dialog_node": "node_1_1601387461969"
+    },
+    {
+      "type": "standard",
+      "title": "Diary",
+      "parent": "node_8_1601385368416",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Diary",
+      "dialog_node": "node_4_1603350661617",
+      "previous_sibling": "node_8_1603293352289"
+    },
+    {
+      "type": "standard",
+      "title": "Email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you Sir/ Madam for giving your email id  and  address. Your mail id $Email and address will be used for further references."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "Email": "@email.literal"
+      },
+      "conditions": "@Email",
+      "dialog_node": "node_5_1601392253344"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_7_1601383114941",
+      "previous_sibling": "node_9_1601388507789"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry || @Enquiry",
+      "digress_in": "returns",
+      "dialog_node": "node_8_1601385368416",
+      "digress_out": "allow_all_never_return",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Vegetables",
+      "parent": "node_8_1601385368416",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Vegetables",
+      "dialog_node": "node_8_1603293352289",
+      "previous_sibling": "node_1_1601387461969"
+    },
+    {
+      "type": "frame",
+      "title": "Orders",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you, for placing an order for $Items  of $number kg/ packet. Please pay using $Payment . Your receipt is sent to $Email ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Order && @Order:order",
+      "digress_in": "returns",
+      "dialog_node": "node_9_1601388507789",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_8_1601385368416",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting the Context variables",
+      "output": {
+        "deleted": "<?context.remove('Items')?><?context.remove('number')?><?context.remove('number2')?><?context.remove('Payment')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1601388507789",
+      "conditions": "true",
+      "dialog_node": "node_9_1603280700498"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs.500/- per pack"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601387461969",
+      "conditions": "@Specials:(Mc Cain Combo Pack)",
+      "dialog_node": "response_10_1601387668089",
+      "previous_sibling": "response_8_1601387633736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1601388507789",
+      "disabled": true,
+      "conditions": "@Order",
+      "dialog_node": "response_10_1601388539772",
+      "previous_sibling": "slot_9_1603345855262"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Vegetables",
+            "options": [
+              {
+                "label": "Potato",
+                "value": {
+                  "input": {
+                    "text": "Potato"
+                  }
+                }
+              },
+              {
+                "label": "Tomato",
+                "value": {
+                  "input": {
+                    "text": "Tomato"
+                  }
+                }
+              },
+              {
+                "label": "Onion",
+                "value": {
+                  "input": {
+                    "text": "Onion"
+                  }
+                }
+              },
+              {
+                "label": "Brinjal",
+                "value": {
+                  "input": {
+                    "text": "Brinjal"
+                  }
+                }
+              },
+              {
+                "label": "Carrot",
+                "value": {
+                  "input": {
+                    "text": "Carrot"
+                  }
+                }
+              },
+              {
+                "label": "Cucumber",
+                "value": {
+                  "input": {
+                    "text": "Cucumber"
+                  }
+                }
+              },
+              {
+                "label": "Lady's Finger",
+                "value": {
+                  "input": {
+                    "text": "Lady's Finger"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1601385368416",
+      "conditions": "@Enquiry:vegetables",
+      "dialog_node": "response_10_1603292516972",
+      "previous_sibling": "response_5_1603220348744"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Diary products",
+            "options": [
+              {
+                "label": "Milk",
+                "value": {
+                  "input": {
+                    "text": "Milk"
+                  }
+                }
+              },
+              {
+                "label": "Butter",
+                "value": {
+                  "input": {
+                    "text": "Butter"
+                  }
+                }
+              },
+              {
+                "label": "Ghee",
+                "value": {
+                  "input": {
+                    "text": "Ghee"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1601385368416",
+      "conditions": "@Enquiry:Diary",
+      "dialog_node": "response_10_1603349273097",
+      "previous_sibling": "response_10_1603292516972"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rs.70 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1603293352289",
+      "conditions": "@Vegetables:Carrot",
+      "dialog_node": "response_1_1603293662781",
+      "previous_sibling": "response_2_1603293638359"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ghee costs Rs.150 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1603350661617",
+      "conditions": "@Diary:Ghee",
+      "dialog_node": "response_1_1603350967012",
+      "previous_sibling": "response_6_1603350904868"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "good afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1601383114941",
+      "conditions": "@Greetings:(Good Afternoon)",
+      "dialog_node": "response_2_1601383869430",
+      "previous_sibling": "response_4_1601383822721"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Menu Card",
+            "source": "https://instapdf.in/wp-content/uploads/pdf-thumbnails/%20d-mart-grocery-product-list-pdf-350.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Vegetables"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Diary Products"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Specials"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1601385368416",
+      "conditions": "@Enquiry:Menu",
+      "dialog_node": "response_2_1601385684704",
+      "previous_sibling": "node_4_1603350661617"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rs. 60 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1603293352289",
+      "conditions": "@Vegetables:Brinjal",
+      "dialog_node": "response_2_1603293638359",
+      "previous_sibling": "response_7_1603293601454"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs.300/-  per pack."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601387461969",
+      "conditions": "@Specials:(Ice creams Blue Berry)",
+      "dialog_node": "response_3_1601387706302",
+      "previous_sibling": "response_10_1601387668089"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs. 150/- per packet"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601387461969",
+      "conditions": "@Specials:(Easy to cook gravy Mix)",
+      "dialog_node": "response_3_1601387736164",
+      "previous_sibling": "response_3_1601387706302"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "good evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1601383114941",
+      "conditions": "@Greetings:(Good evening)",
+      "dialog_node": "response_4_1601383822721",
+      "previous_sibling": "response_8_1601383499844"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Milk costs Rs. 80 per litre"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1603350661617",
+      "conditions": "@Diary:Milk",
+      "dialog_node": "response_4_1603350847608"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Product List",
+            "source": "https://instapdf.in/wp-content/uploads/pdf-thumbnails/%20d-mart-grocery-product-list-pdf-350.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_8_1601385368416",
+      "conditions": "@Enquiry:product",
+      "dialog_node": "response_5_1603220299628",
+      "previous_sibling": "response_8_1601386545943"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Product List",
+            "source": "https://instapdf.in/wp-content/uploads/pdf-thumbnails/%20d-mart-grocery-product-list-pdf-350.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_8_1601385368416",
+      "conditions": "@Enquiry:list",
+      "dialog_node": "response_5_1603220348744",
+      "previous_sibling": "response_5_1603220299628"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rs.30 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1603293352289",
+      "conditions": "@Vegetables:Tomato",
+      "dialog_node": "response_6_1603293496369"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Butter costs Rs.100 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1603350661617",
+      "conditions": "@Diary:Butter",
+      "dialog_node": "response_6_1603350904868",
+      "previous_sibling": "response_4_1603350847608"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We are having 20% off for vegetables."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "We have 15% discount on all diary products."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "We have 10% discount on all special items."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1601385368416",
+      "conditions": "@Enquiry:Offers",
+      "dialog_node": "response_7_1601386272160",
+      "previous_sibling": "response_2_1601385684704"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rs. 40 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1603293352289",
+      "conditions": "@Vegetables:Cucumber",
+      "dialog_node": "response_7_1603293601454",
+      "previous_sibling": "response_9_1603293572791"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rs. 80 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1603293352289",
+      "conditions": "@Vegetables:(French Beans)",
+      "dialog_node": "response_7_1603293724750",
+      "previous_sibling": "response_8_1603293695163"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "good morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1601383114941",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_8_1601383499844"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1601383114941",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1601383965818",
+      "previous_sibling": "response_2_1601383869430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Special Items",
+            "options": [
+              {
+                "label": "Mixed Dry Fruits",
+                "value": {
+                  "input": {
+                    "text": "Mixed Dry Fruits"
+                  }
+                }
+              },
+              {
+                "label": "Mc Cain Combo Pack",
+                "value": {
+                  "input": {
+                    "text": "Mc Cain Combo Pack"
+                  }
+                }
+              },
+              {
+                "label": "Ice creams Blue Berry",
+                "value": {
+                  "input": {
+                    "text": "Ice creams Blue Berry"
+                  }
+                }
+              },
+              {
+                "label": "Easy to cook gravy mix",
+                "value": {
+                  "input": {
+                    "text": "Easy to cook gravy mix"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1601385368416",
+      "conditions": "@Enquiry:special",
+      "dialog_node": "response_8_1601386545943",
+      "previous_sibling": "response_7_1601386272160"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs.700/-  per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601387461969",
+      "conditions": "@Specials:(Mixed Dry Fruits)",
+      "dialog_node": "response_8_1601387633736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rs. 65 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1603293352289",
+      "conditions": "@Vegetables:(Lady's Finger)",
+      "dialog_node": "response_8_1603293695163",
+      "previous_sibling": "response_1_1603293662781"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rs 28 per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1603293352289",
+      "conditions": "@Vegetables:Potato",
+      "dialog_node": "response_9_1603293572791",
+      "previous_sibling": "response_6_1603293496369"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1601388507789",
+      "variable": "$Items",
+      "dialog_node": "slot_5_1601389005669",
+      "previous_sibling": "handler_1_1601389003524"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1601388507789",
+      "variable": "$number",
+      "dialog_node": "slot_7_1601390091026",
+      "previous_sibling": "slot_5_1601389005669"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1601388507789",
+      "variable": "$Payment",
+      "dialog_node": "slot_7_1601390182198",
+      "previous_sibling": "slot_7_1601390091026"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1601388507789",
+      "variable": "$number2",
+      "dialog_node": "slot_9_1603345855262",
+      "previous_sibling": "slot_7_1601390182198"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am an Essential Shop Bot capable of showing menu, find offers and place orders. Can you please give your name and email id ?"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
